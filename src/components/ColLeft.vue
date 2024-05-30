@@ -30,6 +30,7 @@ ul li {
     color: white;
     font-weight: bold;
     font-size: 12px;
+    padding: 0 5px;
 }
 
 ul a {
