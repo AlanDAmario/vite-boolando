@@ -17,22 +17,18 @@ export default {
 <style lang="scss" scoped>
 .col {
     width: 25%;
-}
 
-.logo-inline-block {
-    width: 15px;
-}
+    .logo-inline-block {
+        width: 12px;
+    }
 
-.logo-contain {
-    margin-left: 75%;
-    filter: invert(100%);
-}
+    .logo-contain {
+        margin-left: 75%;
+        filter: invert(100%);
+    }
 
-.logo-contain a {
-    padding: 0 3px;
-}
-
-img {
-    width: 100%;
+    a {
+        padding: 0 3px;
+    }
 }
 </style>

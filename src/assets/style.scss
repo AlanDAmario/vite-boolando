@@ -1,0 +1,59 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgb(255, 111, 0);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+footer {
+    background-color: black;
+    padding: 15px;
+    width: 100%;
+}
+
+/* CLASSI DI LAYOUT */
+
+
+
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-25 {
+    width: 25%;
+
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+
+/* FINE CLASSE LAYOUT */
+
+
+/* CLASSI UTILITY */
+
+
+
+img {
+    width: 100%;
+}

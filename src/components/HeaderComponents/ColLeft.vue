@@ -17,28 +17,25 @@ export default {
 <style lang="scss" scoped>
 .col {
     width: 25%;
-}
 
-ul {
-    margin-left: 5%;
-}
+    ul {
+        margin-left: 5%;
+    }
 
-ul li {
-    list-style-type: none;
-    text-align: center;
-    display: inline-block;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    padding: 0 5px;
-}
+    li {
+        list-style-type: none;
+        text-align: center;
+        display: inline-block;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+        padding: 0 5px;
+    }
 
-ul a {
-    text-decoration: none;
-    color: white;
-}
+    a {
+        text-decoration: none;
+        color: white;
+    }
 
-img {
-    width: 100%;
 }
 </style>

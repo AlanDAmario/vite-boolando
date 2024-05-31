@@ -1,7 +1,7 @@
 <script>
-import ColLeft from './ColLeft.vue'
-import LogoHead from './LogoHead.vue';
-import ColRight from './ColRight.vue';
+import ColLeft from './HeaderComponents/ColLeft.vue';
+import LogoHead from './HeaderComponents/LogoHead.vue';
+import ColRight from './HeaderComponents/ColRight.vue';
 export default {
     name: 'AppHeader',
     components: {
@@ -13,41 +13,33 @@ export default {
 </script>
 
 <template>
-    <header>
-        <div class="container">
-            <div class="col-100 row-flex">
-                <!-- Coll left -->
-                <ColLeft></ColLeft>
-                <!-- // LOGO HEADER// -->
-                <LogoHead></LogoHead>
-                <!-- // COL RIGHT// -->
-                <ColRight></ColRight>
-            </div>
+    <div class="container">
+        <div class="col-100 row-flex">
+            <!-- Coll left -->
+            <ColLeft></ColLeft>
+            <!-- // LOGO HEADER// -->
+            <LogoHead></LogoHead>
+            <!-- // COL RIGHT// -->
+            <ColRight></ColRight>
         </div>
-    </header>
+    </div>
 </template>
 
 <style lang="scss" scoped>
 .container {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
-}
-
-header {
-    background-color: rgb(255, 111, 0);
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
 
 
-.row-flex {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.col-100 {
-    width: 100%;
+    .row-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-100 {
+        width: 100%;
+    }
+
 }
 </style>
