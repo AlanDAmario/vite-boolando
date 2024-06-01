@@ -20,13 +20,13 @@ export default {
                 <div class="col-33" v-for="(product, index) in products.products">
                     <div class="content position-relative ">
 
-                        <img class="main-image" :src="`/img/${product.frontImage}`" alt="modello">
-                        <img class="hover-image" :src="`/img/${product.backImage}`" alt="modello">
+                        <img class="main-image" :src="`/img/${product.frontImage}`" .alt="product.id">
+                        <img class="hover-image" :src="`/img/${product.backImage}`" .alt="product.id">
 
                         <div class="position-absolute" v-for="badge in product.badges" :class="badge.type">
                             <span> {{ badge.value }}</span>
                         </div>
-                        <div class="hearts">
+                        <div class="hearts" v-show="product.isInFavorites">
                             <span>&#10084;</span>
                         </div>
                     </div>
@@ -100,24 +100,12 @@ export default {
     position: relative;
     left: 85%;
     bottom: 380px;
-}
-
-.hearts:hover {
-    padding: 3px;
-    display: inline-block;
     color: red;
 }
 
-.green-bg-left {
-    background-color: green;
-    bottom: 60px;
-    font-size: 12px;
-    color: white;
-    text-align: center;
-    width: auto;
-    left: 0px;
-    padding: 3px;
-}
+
+
+
 
 .text-items {
     text-align: left;
