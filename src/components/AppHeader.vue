@@ -13,16 +13,18 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <div class="col-100 row-flex">
-            <!-- Coll left -->
-            <ColLeft></ColLeft>
-            <!-- // LOGO HEADER// -->
-            <LogoHead></LogoHead>
-            <!-- // COL RIGHT// -->
-            <ColRight></ColRight>
+    <header>
+        <div class="container">
+            <div class="col-100 row-flex">
+                <!-- Coll left -->
+                <ColLeft></ColLeft>
+                <!-- // LOGO HEADER// -->
+                <LogoHead></LogoHead>
+                <!-- // COL RIGHT// -->
+                <ColRight></ColRight>
+            </div>
         </div>
-    </div>
+    </header>
 </template>
 
 <style lang="scss" scoped>

@@ -1,16 +1,12 @@
 <script>
-import CardImg from './MainComponents/CardImg.vue';
 import products from '../data/db.json'
 export default {
     name: 'AppMain',
-    components: {
-        CardImg,
-    },
     data() {
         return {
             products,
         }
-    }
+    },
 }
 </script>
 <template>
@@ -51,112 +47,90 @@ export default {
 .container {
     max-width: 900px;
     margin: 0 auto;
-}
 
-.row-flex {
-    display: flex;
-    flex-wrap: wrap;
-}
+    .row-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.col-33 {
-    margin: 50px 10px;
-    width: calc(100% / 3 - 20px);
-}
+    .col-33 {
+        margin: 50px 10px;
+        width: calc(100% / 3 - 20px);
+    }
 
-.position-relative {
-    position: relative;
-    top: 25px;
-}
+    .position-relative {
+        position: relative;
+        top: 25px;
+    }
 
-.position-absolute {
-    position: absolute;
-}
+    .position-absolute {
+        position: absolute;
+    }
 
-.discount {
-    background-color: red;
-    width: auto;
-    left: 0;
-    bottom: 60px;
-    font-size: 12px;
-    color: white;
-    text-align: center;
-    padding: 3px;
-}
+    .discount {
+        background-color: red;
+        width: auto;
+        left: 0;
+        bottom: 60px;
+        font-size: 12px;
+        color: white;
+        text-align: center;
+        padding: 3px;
+    }
 
-.tag {
-    background-color: green;
-    bottom: 60px;
-    font-size: 12px;
-    color: white;
-    text-align: center;
-    width: auto;
-    left: 38px;
-    padding: 3px;
-}
+    .tag {
+        background-color: green;
+        bottom: 60px;
+        font-size: 12px;
+        color: white;
+        text-align: center;
+        width: auto;
+        left: 38px;
+        padding: 3px;
+    }
 
-.hearts {
-    width: auto;
-    padding: 3px;
-    position: relative;
-    left: 85%;
-    bottom: 380px;
-    color: red;
-}
+    .hearts {
+        width: auto;
+        padding: 3px;
+        position: relative;
+        left: 85%;
+        bottom: 380px;
+        color: red;
+    }
 
+    .text-items {
+        text-align: left;
+    }
 
+    .brand {
+        font-size: 12px;
+    }
 
-
-
-.text-items {
-    text-align: left;
-}
-
-.brand {
-    font-size: 12px;
-}
-
-.red-price {
-    color: red;
-    font-size: 12px;
-    font-weight: bold;
-}
+    .red-price {
+        color: red;
+        font-size: 12px;
+        font-weight: bold;
+    }
 
 
-.content:hover .main-image {
-    display: none;
-}
+    .content:hover .main-image {
+        display: none;
+    }
 
-.content:hover .hover-image {
-    display: inline-block;
-}
+    .content:hover .hover-image {
+        display: inline-block;
+    }
 
-.hover-image {
-    display: none;
-}
+    .hover-image {
+        display: none;
+    }
 
-.foot-info-booleano {
-    font-weight: bold;
-    color: white;
-    font-size: 20px;
-    padding: 0 10px;
-}
+    .col-33:nth-of-type(3) .hearts {
+        display: flex;
+    }
 
-.social-info {
-    padding: 0 10px;
-    font-size: 10px;
-    color: white;
-    font-weight: bold;
-}
-
-.social-logo {
-    margin-top: 10px;
-    display: flex;
-    margin-left: 85%;
-    width: 15px;
-    filter: invert(100%);
-}
-
-.margin-left {
-    margin-left: 83%;
+    .col-33:nth-of-type(4) .hearts {
+        display: flex;
+    }
 }
 </style>
